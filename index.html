@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>::Welcome To JavaScript::</title>
+    <title>::Sign Up Form - Firebase::</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
     <!-- Styelesheets -->
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/custom_styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -22,21 +23,21 @@
         <div class="header-blue">
             <nav class="navbar navbar-default navigation-clean-search">
                 <div class="container">
-                    <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">Wanjugu's JS Stuff</a>
+                    <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"></a>
                         <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                     </div>
                     <div class="collapse navbar-collapse" id="navcol-1">
                         <ul class="nav navbar-nav">
-                            <li class="active" role="presentation"><a href="#">Link</a></li>
+<!--                            <li class="active" role="presentation"><a href="#">Link</a></li>-->
+<!--
                             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Content <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li role="presentation"><a href="datatypes.html">Data Types</a></li>
                                     <li role="presentation"><a href="simpleeffects.html">Simple Effects</a></li>
-<!--
                                     <li role="presentation"><a href="#">Week 2</a></li>
                                     <li role="presentation"><a href="#">Week 3</a></li>
--->
                                 </ul>
+-->
                             </li>
                         </ul>
                         <form class="navbar-form navbar-right" target="_self">
@@ -54,20 +55,155 @@
                     </div>
                 </div>
             </nav>
+
+
             <div class="container hero f-center">
-                <div class="row col f-center">
-                    <div class="cntnt f-vert">
-                        <h1>The revolution is here.</h1>
-                        <p>JavaScript JavaScript JavaScript JavaScript JavaScript JavaScript JavaScript JavaScript JavaScript JavaScriptJavaScript JavaScript JavaScript JavaScript </p>
-                        <button class="btn btn-default btn-lg action-button" type="button">Learn More</button>
+                <div class="row col">
+                    <div class="cntnt frbse">
+                        <h1>Simple Input form + FIREBASE</h1>
+
+                        <!-- The form -->
+                        <div>
+                            <form>
+
+                                <!-- First Name -->
+                              <div class="form-group">
+                                <label for="exampleFirstName">FirstName</label>
+                                <input type="text" class="form-control" id="exampleFirstName" aria-describedby="firstNameHelp" placeholder="Enter First Name">
+<!--                                <small id="firstNameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                              </div>
+
+                                <!-- Second Name -->
+                              <div class="form-group">
+                                <label for="exampleFirstName">SecondName</label>
+                                <input type="text" class="form-control" id="exampleSecondName" aria-describedby="secondNameHelp" placeholder="Enter Second Name">
+<!--                                <small id="secondNameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                              </div>
+
+                                <!-- Email -->
+                              <div class="form-group">
+                                <label for="exampleInputEmail">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                              </div>
+
+<!--
+                                 Password
+                              <div class="form-group">
+                                <label for="exampleInputPassword">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                              </div>
+-->
+
+
+<!--
+                              <div class="form-group">
+                                <label for="exampleSelect1">Example select</label>
+                                <select class="form-control" id="exampleSelect1">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleSelect2">Example multiple select</label>
+                                <select multiple class="form-control" id="exampleSelect2">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                              </div>
+-->
+
+<!--
+                             Textarea
+                              <div class="form-group">
+                                <label for="exampleTextarea">Example textarea</label>
+                                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                              </div>
+
+                                 File
+                              <div class="form-group">
+                                <label for="exampleInputFile">File input</label>
+                                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                                <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+                              </div>
+
+-->
+
+<!--
+                              <fieldset class="form-group">
+                                <legend>Radio buttons</legend>
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                    Option one is this and that&mdash;be sure to include why it's great
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                                    Option two can be something else and selecting it will deselect option one
+                                  </label>
+                                </div>
+                                <div class="form-check disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                                    Option three is disabled
+                                  </label>
+                                </div>
+                              </fieldset>
+-->
+
+
+<!--
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input type="checkbox" class="form-check-input">
+                                  Check me out
+                                </label>
+                              </div>
+-->
+                              <button id="subBtn" type="submit" class="btn btn-primary  btn-default btn-lg action-button">Submit</button>
+                            </form>
+
+
+                        </div>
+
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!----------------------------------------------------------------------->
+    <!-- SCRIPTS -->
+    <!----------------------------------------------------------------------->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDMK5OyvV9W6kUlcWRpvJl4dXhgbtYQB7w",
+        authDomain: "test1-5bab0.firebaseapp.com",
+        databaseURL: "https://test1-5bab0.firebaseio.com",
+        projectId: "test1-5bab0",
+        storageBucket: "test1-5bab0.appspot.com",
+        messagingSenderId: "1011599699126"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script src="js/index.js"></script>
+
 </body>
 
 </html>
